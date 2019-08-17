@@ -9,7 +9,7 @@ var app = express();
 app.use(compression())
 var handler = require('./routes/handler');
 // const mime = require('mime');
-var port = 7000 ;
+var port = process.env.PORT ;
 
 // var session=require('express-session');
 var cookieParser = require('cookie-parser');
